@@ -17,11 +17,11 @@
     - undefined : variable은 존재하나 값이 정해지지 않은 상태
         - null은 '비어있음' 값이 정해진 상태지만, undefined는 값이 정해지지 않은 상태임
 
-### JavaScript 자료구조 기본
+### JavaScript 기본
 
-- Array : 대괄호 [ ]을 이용하여 생성. 다른 언어들과 동일
+- Array : 대괄호 [ ]을 이용하여 생성 + ;. 다른 언어들과 동일
 
-- Objects : 중괄호 { }을 이용하여 생성. 파이썬과 비슷함
+- Objects : 중괄호 { }을 이용하여 생성 + ;. 파이썬과 비슷함
     ```
         const player = {
             name: "RnL",
@@ -35,3 +35,15 @@
         player.name = "RnL_"
         player.height = "174"
     ```
+- Function : function 함수이름(매개변수) { } 의 형태로 생성. ;은 필요 없음
+    - 객체(Objects)의 안과 밖에서 형태가 조금 다름
+    ```
+         function plus(a, b) {
+             console.log(a + b);
+         }
+
+         const calc = {
+             plus: function (a, b) {
+                 console.log(a + b);
+             }
+         };
