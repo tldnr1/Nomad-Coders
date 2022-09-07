@@ -5,9 +5,9 @@
         html이 css, js의 접착제 역할을 한다
 
 - 변수 : __const__, __let__, var
-    - const : 상수(constant), 변하지 않는 값
-    - let : 변할 수 있는 값
-    - var : 사용 금지 (상수의 개념이 없음)
+    - const : 상수(constant), 변하지 않는 값 - __항상__
+    - let : 변할 수 있는 값 - __가끔__
+    - var : 사용 금지 (상수의 개념이 없음) - __네버__
 
 - Booleans
     - true, false : '참, 거짓'이라는 값
@@ -47,3 +47,13 @@
                  console.log(a + b);
              }
          };
+    ```
+
+- Conditional : if, else if, else 로 사용. ;은 필요 없음
+
+- 연산자 (대부분 동일, 헷갈린 것만 적어둠)
+    - 일치(===) : 두 피연산자의 값과 타입이 모두 같은 경우 true를 반환
+    - 조건(삼항) 연산자 : ' condition ? 참값 : 거짓값; ' 의 형태
+    - typeof 연산자 : ' typeof 피연산자 ' 의 형태. 피연산자의 타입을 나타내는 문자열 반환
+
+    https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Expressions_and_Operators
