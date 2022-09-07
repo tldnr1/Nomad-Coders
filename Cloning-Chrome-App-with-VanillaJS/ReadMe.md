@@ -16,3 +16,22 @@
         - 인위적으로 variable 안에 어떤 것이 없다는 것을 확실히 하기 위해 사용됨
     - undefined : variable은 존재하나 값이 정해지지 않은 상태
         - null은 '비어있음' 값이 정해진 상태지만, undefined는 값이 정해지지 않은 상태임
+
+### JavaScript 자료구조 기본
+
+- Array : 대괄호 [ ]을 이용하여 생성. 다른 언어들과 동일
+
+- Objects : 중괄호 { }을 이용하여 생성. 파이썬과 비슷함
+    ```
+        const player = {
+            name: "RnL",
+            points: 10,
+            weight: 70
+        };
+    ```
+    - const는 player 자체에만 해당  
+        즉, player.name을 변경하거나 player.height를 추가하는 동작은 오류가 아님!
+    ```
+        player.name = "RnL_"
+        player.height = "174"
+    ```
