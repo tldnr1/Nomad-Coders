@@ -57,3 +57,8 @@
     - typeof 연산자 : ' typeof 피연산자 ' 의 형태. 피연산자의 타입을 나타내는 문자열 반환
 
     https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Expressions_and_Operators
+
+### JavaScript on the Browser
+
+- document : html 파일을 저장해둔 것. js에서 document.title 처럼 사용해서 접근 가능
+    - js로 html을 수정할 수 있다는 뜻!
