@@ -62,3 +62,26 @@
 
 - document : html 파일을 저장해둔 것. js에서 document.title 처럼 사용해서 접근 가능
     - js로 html을 수정할 수 있다는 뜻!
+
+- querySelector : 클래스 선택자, id 선택자 등을 이용해서 document에 접근 가능
+    - 예시 - const h1 = document.querySelector('div.hello:first-child h1');
+
+- addEventListener : 원하는 이벤트와 그에 대응하는 동작을 만들 수 있음
+    - h1.addEventListener("clicked", handleTitleColor);  => h1을 클릭했을 때, handleTitleColor가 실행
+
+- classList : 클래스 이름들을 담아두는 리스트. js와 css를 연동해서 쓸 때 사용
+    - className = "" 와 같이 직접적으로 클래스 명을 변경하면 이전 클래스명이 지워짐  
+            따라서 classList에 toggle, add, remove 등을 이용해서 기존 클래스를 유지
+    ```
+        function handleTitleClick() {
+            h1.classList.toggle("clicked");
+
+            /*  아래의 코드가 toggle과 동일함
+            const clickedClass = "clicked";
+            if (h1.classList.contains(clickedClass)) {
+                h1.classList.remove(clickedClass);
+            } else {
+                h1.classList.add(clickedClass);
+            } */
+        }
+    ```
