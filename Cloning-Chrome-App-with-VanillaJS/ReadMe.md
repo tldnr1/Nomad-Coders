@@ -126,3 +126,9 @@
 
         `Hello ${username}`
     ```
+
+- __Web의 기본 저장소__
+    - 개발자 도구(F12) -> Application -> Storage 로 가면 볼 수 있음
+    - 다양한 것들이 많고, 각 저장소에 따라 사용 방법이 다르므로 공부 필요! (__API__ 등)
+        - local storage는 (key, value) 의 형태로 저장  
+            localStorage.setItem("username", "이름")
