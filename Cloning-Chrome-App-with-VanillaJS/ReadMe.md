@@ -119,4 +119,10 @@
         - 당연히 hidden 클래스는 display: none; 이 되어야 함
 
 - 문자열 합치기 with `
-    - "Hello " + username 은 `Hello ${username}` 과 동일함
+    - "Hello " + username 은 ` 로 감싼 Hello ${username} 과 동일함
+    ```
+    [ 아래의 둘은 동일한 결과 ]
+        "Hello " + username
+
+        `Hello ${username}`
+    ```
