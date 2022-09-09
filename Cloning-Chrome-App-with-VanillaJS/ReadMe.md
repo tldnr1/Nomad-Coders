@@ -85,3 +85,18 @@
             } */
         }
     ```
+
+### Login
+- Form Submissions
+    - form 내부에서 input이나 버튼을 사용하면 페이지가 새로고침이 된다.  
+        이를 event.preventDefault(); 를 통해 막을 수 있다.
+    ```
+        function onLoginSubmit(event) {
+            event.preventDefault();
+            console.log(loginInput.value);
+        }
+    ```
+    - event : 매개변수로 적은 event는 __브라우저에 따라 생기는 매개변수__ 이다.  
+            즉, chrome에서 지원해주는 매개변수이고 이 event 내부에 preventDefault() 라는 함수가 있는 것
+
+- 
