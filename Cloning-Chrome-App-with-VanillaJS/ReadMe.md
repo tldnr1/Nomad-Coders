@@ -96,7 +96,27 @@
             console.log(loginInput.value);
         }
     ```
-    - event : 매개변수로 적은 event는 __브라우저에 따라 생기는 매개변수__ 이다.  
-            즉, chrome에서 지원해주는 매개변수이고 이 event 내부에 preventDefault() 라는 함수가 있는 것
+    - event : 매개변수로 적은 event는 __js 함수가 반환하는 기본 매개변수__ 이다.  
+            즉, addEventListener('click', clickFunction); 이라고 하면  
+                clickFunction(event) 라는 함수의 event는 click에 해당하는 event를 받게된다!!
+        ```
+        [ 아래는 submit event 에 대한 예시 ]
+        const loginInput = document.querySelector("#login-form input");
 
-- 
+        function onLoginSubmit(event) {
+            event.preventDefault();
+            console.dir(event);
+            console.log(loginInput.value);
+        }
+
+        loginForm.addEventListener("submit", onLoginSubmit);
+        ```
+        - 위 코드에서 console.dir(event) 를 보면 SubmitEvent 라고 뜨는 걸 볼 수 있다!
+
+- classList 활용
+    - css에서 hidden이라는 클래스 생성 후,  
+        특정 태그에 hidden 클래스를 주면 그 태그를 숨길 수 있다!
+        - 당연히 hidden 클래스는 display: none; 이 되어야 함
+
+- 문자열 합치기 with `
+    - "Hello " + username 은 `Hello ${username}` 과 동일함
