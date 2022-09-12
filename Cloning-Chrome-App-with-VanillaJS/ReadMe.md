@@ -132,3 +132,14 @@
     - 다양한 것들이 많고, 각 저장소에 따라 사용 방법이 다르므로 공부 필요! (__API__ 등)
         - local storage는 (key, value) 의 형태로 저장  
             localStorage.setItem("username", "이름")
+
+### Clock
+- clock : getClock() 이용
+    - getHours(), getMinutes(), getSeconds() 등
+
+- setInterval, setTimeout
+    - setInterval(function, ms) : ms 초 마다 function 실행
+    - setTimeout(function, ms) : ms 초 뒤에 function 실행
+
+- a.padStart(cnt, x) : cnt 보다 a가 짧으면 x를 모자란 만큼 a 앞에 붙여줌
+    - e.g.  "Hello".padStart(7, "x") => xxHello
