@@ -143,3 +143,21 @@
 
 - a.padStart(cnt, x) : cnt 보다 a가 짧으면 x를 모자란 만큼 a 앞에 붙여줌
     - e.g.  "Hello".padStart(7, "x") => xxHello
+
+### Quotes and Background
+- Math.random : 0 ~ 1 사이의 난수(float형)를 랜덤으로 생성.
+    - Math.random(10) => 0 ~ 9.999... 사이의 수를 랜덤 생성
+    - Math.floor 을 통해 내림을 이용해서 정수로 바꿈
+        - Math.florr(Math.random(10)) : 0 ~ 9 사이의 정수
+
+- __js를 이용해 html 태그 추가하기__
+    - a.createElement(태그명) : a에 새로운 태그를 생성할 수 있음
+    - a.appendChild(x) : a에 x를 추가할 수 있음
+    ```
+        const chosenImage = "0.jpeg";
+
+        const bgImage = document.createElement("img");
+        bgImage.src = `img/${chosenImage}`;
+
+        document.body.appendChild(bgImage);
+    ```
