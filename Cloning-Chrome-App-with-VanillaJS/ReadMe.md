@@ -161,3 +161,10 @@
 
         document.body.appendChild(bgImage);
     ```
+
+### To Do List
+- list와 push
+    - toDos.push(newToDo) 라고 하면 toDos라는 리스트에 newToDo를 추가할 수 있음
+
+- __JSON.stringify()__
+    - object, array 상관 없이 다 __JSON 문자열__ 로 바꿔줌
